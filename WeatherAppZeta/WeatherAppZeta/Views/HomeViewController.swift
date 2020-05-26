@@ -15,9 +15,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var highTempLabel: UILabel!
     @IBOutlet weak var homeTableView: UITableView!
     
+    let viewModel = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.setLocationManagerDelegate()
+        viewModel.requestLocation()
     }
 
 
