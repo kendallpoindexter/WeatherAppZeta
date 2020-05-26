@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var weatherDescriptionLabel: UILabel!
+    @IBOutlet weak var lowTemp: UILabel!
+    @IBOutlet weak var highTempLabel: UILabel!
+    @IBOutlet weak var homeTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
